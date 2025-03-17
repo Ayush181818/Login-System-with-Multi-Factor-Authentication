@@ -1,2 +1,24 @@
-# Login-System-with-Multi-Factor-Authentication
- Developed a secure and scalable user authentication system with multi-factor authentication (MFA) to enhance security. Implemented role-based access control (RBAC) and encryption techniques to protect user credentials. The system supports email and OTP-based authentication, along with third-party authentication options (Google, Authenticator apps)
+# MFA Login System
+A simple login system with Multi-Factor Authentication (MFA) using Node.js, Express, MongoDB, and Google Authenticator.
+
+## 🚀 How to Run
+1. Clone the repo and install dependencies:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/mfa-login-system.git
+   cd mfa-login-system
+   npm install
+   ```
+2. Set up your `.env` file with MongoDB and JWT secrets.
+3. Start the server:
+   ```bash
+   node server.js
+   ```
+4. Use routes for authentication and MFA activation.
+
+## 📌 Endpoints
+- `POST /auth/register` - Register user
+- `POST /auth/login` - Login user
+- `POST /auth/enable-mfa` - Enable MFA for user
+- `POST /auth/verify-mfa` - Verify MFA token
+
+Made with ❤️ by [Your Name]
